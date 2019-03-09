@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: PunchMask
+  m_Mask: 01000000010000000100000000000000000000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Head5
+    m_Weight: 1
+  - m_Path: Hose_Limbs
+    m_Weight: 1
+  - m_Path: Origin_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Body_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Body_jnt/Head_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Body_jnt/Lt_Shoulder_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Body_jnt/Lt_Shoulder_jnt/Lt_Arm_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Body_jnt/Lt_Shoulder_jnt/Lt_Arm_jnt/Lt_Elbow_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Body_jnt/Lt_Shoulder_jnt/Lt_Arm_jnt/Lt_Elbow_jnt/Lt_Wrist_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Body_jnt/Lt_Shoulder_jnt/Lt_Arm_jnt/Lt_Elbow_jnt/Lt_Wrist_jnt/Lt_Hand_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Body_jnt/Rt_Shoulder_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Body_jnt/Rt_Shoulder_jnt/Rt_Arm_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Body_jnt/Rt_Shoulder_jnt/Rt_Arm_jnt/Rt_Elbow_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Body_jnt/Rt_Shoulder_jnt/Rt_Arm_jnt/Rt_Elbow_jnt/Rt_Wrist_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Body_jnt/Rt_Shoulder_jnt/Rt_Arm_jnt/Rt_Elbow_jnt/Rt_Wrist_jnt/Rt_Hand_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Lt_Leg_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Lt_Leg_jnt/Lt_Knee_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Lt_Leg_jnt/Lt_Knee_jnt/Lt_Ankle_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Lt_Leg_jnt/Lt_Knee_jnt/Lt_Ankle_jnt/Lt_Foot_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Rt_Leg_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Rt_Leg_jnt/Rt_Knee_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Rt_Leg_jnt/Rt_Knee_jnt/Rt_Ankle_jnt
+    m_Weight: 1
+  - m_Path: Origin_jnt/Waist_jnt/Rt_Leg_jnt/Rt_Knee_jnt/Rt_Ankle_jnt/Rt_Foot_jnt
+    m_Weight: 1

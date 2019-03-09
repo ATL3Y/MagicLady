@@ -1,0 +1,10 @@
+<manifest xmlns:ml="magicleap" ml:developer_id="24ecf41e-0236-4a9f-8ca8-4ecc9dea6edb" ml:package="darko" ml:version_code="1" ml:version_name="">
+  <application ml:sdk_version="1.0" ml:visible_name="Darko">
+    <uses-privilege ml:name="LowLatencyLightwear" />
+    <uses-privilege ml:name="CameraCapture" />
+    <uses-privilege ml:name="WorldReconstruction" />
+    <component ml:binary_name="bin/Player.elf" ml:name=".fullscreen" ml:type="Fullscreen" ml:visible_name="Darko">
+      <icon ml:model_folder="Icon/Model" ml:portal_folder="Icon/Portal" />
+    </component>
+  </application>
+</manifest>
