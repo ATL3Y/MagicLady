@@ -24,8 +24,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 velocity = Vector3.zero;
 
-    [SerializeField]
-    private GameObject hitBox;
+    // [SerializeField]
+    // private GameObject hitBox;
 
     public void Start ( )
     {
@@ -79,6 +79,7 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetTrigger ( punchHash );
         }
+        /*
         if ( AmPunching ( ) )
         {
             hitBox.SetActive ( true );
@@ -87,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
         {
             hitBox.SetActive ( false );
         }
+        */
 
         if ( Input.GetKeyDown ( KeyCode.Space ) )
         {

@@ -49,7 +49,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Punch
     m_StateMachine: {fileID: 1107922325626421160}
-    m_Mask: {fileID: 31900000, guid: dfcbe9ad628f9d649b3a76050de89e84, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 1
