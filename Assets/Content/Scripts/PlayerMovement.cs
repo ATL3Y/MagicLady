@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float maxSpeed = 12.0f;
     public float deccel = 20.0f;
 
+    [SerializeField]
     private Animator anim;
     private int jumpHash;
     private int jumpLayer;
@@ -18,18 +19,21 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
 
     private Quaternion ogQuat;
-    private float speed = 3.0f;
+
 
     private bool isOnGround;
 
     private Vector3 velocity = Vector3.zero;
+    private float oAnimSpeed=0.0f;
+    [SerializeField]
+    private float animChangeSpeedMult = 1.3f;
 
     // [SerializeField]
     // private GameObject hitBox;
 
     public void Start ( )
     {
-        anim = GetComponent<Animator> ( );
+        // anim = GetComponent<Animator> ( );
         rb = GetComponent<Rigidbody> ( );
         ogQuat = transform.rotation;
 
@@ -102,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
         float vInput = Input.GetAxisRaw("Vertical");
 
         Vector3 accel = new Vector3(0.0f, 0.0f, 0.0f);
-        accel.x = hInput * this.accel ;
+        accel.x = hInput * this.accel;
         accel.y = Physics.gravity.y;
         accel.z = vInput * this.accel;
 
@@ -117,8 +121,12 @@ public class PlayerMovement : MonoBehaviour
 
         // Update animation.
         float animSpeed = Mathf.Abs(velocity.x + velocity.z);
-        // Debug.Log ( animSpeed );
+        animSpeed = Mathf.Lerp ( oAnimSpeed, animSpeed, animChangeSpeedMult * Time.deltaTime );
+        animSpeed = Mathf.Clamp01 ( animSpeed );
         anim.SetFloat ( "Speed", animSpeed );
+        oAnimSpeed = animSpeed;
+        // Debug.Log ( animSpeed );
+
 
         // HACKL3Y: Add raycast ground and transition from jump to root anim.
         if ( transform.position.y <= 0.0f )
@@ -132,11 +140,11 @@ public class PlayerMovement : MonoBehaviour
             isOnGround = false;
         }
 
-        // HACKL3Y: do this for real
+        // HACKL3Y: do this for real, on a curve that eases in and out. 
         float dead = 0.1f;
         if ( hInput > dead || hInput < -dead || vInput > dead || vInput < -dead )
         {
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation ( new Vector3 ( velocity.x, 0.0f, velocity.z ) ), 5.0f * Time.deltaTime);
+            transform.rotation = Quaternion.Slerp ( transform.rotation, Quaternion.LookRotation ( new Vector3 ( velocity.x, 0.0f, velocity.z ) ), animChangeSpeedMult * Time.deltaTime );
 
         }
 
