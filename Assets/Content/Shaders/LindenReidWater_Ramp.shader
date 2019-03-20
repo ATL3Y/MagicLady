@@ -1,4 +1,4 @@
-﻿Shader "Custom/LindenReidWater"
+﻿Shader "Custom/LindenReidWater_Ramp"
 {
 	Properties
 	{

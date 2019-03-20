@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{AF1091D9-8AE9-B866-E4C7-8B6D7B1A5981}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Content/Shaders/LindenReidWater_Fade.shader">
+    <Files>
+      <File FileName="Assets/Content/Shaders/LindenReidWater_Fade.shader" Line="176" Column="75" />
+      <File FileName="Assets/Content/Shaders/QuillShader.shader" Line="61" Column="17" NotebookId="1" />
+      <File FileName="Assets/Content/Scripts/PlayerMovement.cs" Line="58" Column="1" NotebookId="1" />
+      <File FileName="../CatlikeCoding_Tutorials/Basics/CC_Basics/Assets/Shaders/BackdropSun.shader" Line="93" Column="17" NotebookId="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
